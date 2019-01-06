@@ -16,3 +16,8 @@ what is missing
 ===============
 publucations, academics, events, individual project pages 
 change of theme color to yellow
+
+
+07.01.2019
+============
+adding mars maven project to educational commute

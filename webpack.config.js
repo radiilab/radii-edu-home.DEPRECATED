@@ -17,7 +17,8 @@ var styleExtractor = new ExtractTextPlugin({
 var entry1 = [
     'CommingSoon',
     'habitat',
-    'projects'
+    'projects',
+    'space-marsMaven'
   ];
    // Call our function on our views directory.
 var entryHtmlPlugins = entry1.map(function (entryName) {
