@@ -1,3 +1,4 @@
+radii-educational website for deployment
 # what to expect
 
 bundled webpages in the minified format so that the dist folder can be uploaded to the firebse hodting

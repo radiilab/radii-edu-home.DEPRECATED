@@ -21,3 +21,7 @@ change of theme color to yellow
 07.01.2019
 ============
 adding mars maven project to educational commute
+
+17.03.2019
+=================
+changing the site layout for participations and posts of different kinds
