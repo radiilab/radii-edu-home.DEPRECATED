@@ -25,3 +25,4 @@ adding mars maven project to educational commute
 17.03.2019
 =================
 changing the site layout for participations and posts of different kinds
+adding sitemap to the site for indexing
