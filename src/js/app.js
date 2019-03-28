@@ -1,6 +1,7 @@
 import '../scss/main.scss';
-import '../css/w3.css'
-import '../css/w3-theme-black.css'
+import '../css/w3.css';
+import '../css/w3-theme-black.css';
+import '../css/amber.css';
 import { RandomGenerator } from './random-generator';
 
 const outputParagraph = document.querySelector('#outputParagraph');
@@ -16,5 +17,5 @@ const outputRandomRange = () => {
 const buttonRndInt = document.querySelector('#randomInt');
 const buttonRndRange = document.querySelector('#randomRange');
 
-buttonRndInt.addEventListener('click', outputRandomInt);
-buttonRndRange.addEventListener('click', outputRandomRange);
+// buttonRndInt.addEventListener('click', outputRandomInt);
+// buttonRndRange.addEventListener('click', outputRandomRange);

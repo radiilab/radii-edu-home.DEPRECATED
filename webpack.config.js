@@ -21,7 +21,11 @@ var entry1 = [
     'workGroup-Artists',
     'workGroup-Engineers',
     'projects',
-    'space-marsMaven'
+    'space-marsMaven',
+    'brochure11',
+    'brochure12',
+    'brochure21',
+    'brochure22',
   ];
    // Call our function on our views directory.
 var entryHtmlPlugins = entry1.map(function (entryName) {
