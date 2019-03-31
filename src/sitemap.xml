@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -9,7 +10,7 @@
 
 <url>
   <loc>https://edu.radii.in/</loc>
-  <lastmod>2019-03-17T08:07:58+00:00</lastmod>
+  <lastmod>2019-03-30T15:51:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
@@ -19,17 +20,42 @@
 </url>
 <url>
   <loc>https://edu.radii.in/about.html</loc>
-  <lastmod>2019-03-17T08:07:58+00:00</lastmod>
+  <lastmod>2019-03-30T15:51:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://edu.radii.in/projects.html</loc>
-  <lastmod>2018-12-20T18:27:46+00:00</lastmod>
+  <loc>https://edu.radii.in/workGroup-Sciences.html</loc>
+  <lastmod>2019-03-30T15:51:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/workGroup-Engineers.html</loc>
+  <lastmod>2019-03-30T15:51:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/brochure11.html</loc>
+  <lastmod>2019-03-30T15:51:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/brochure12.html</loc>
+  <lastmod>2019-03-30T15:51:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/brochure21.html</loc>
+  <lastmod>2019-03-30T15:51:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/brochure22.html</loc>
+  <lastmod>2019-03-30T15:51:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://edu.radii.in/space-marsMaven.html</loc>
-  <lastmod>2019-01-12T16:41:38+00:00</lastmod>
+  <lastmod>2019-03-30T15:51:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
