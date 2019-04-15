@@ -26,3 +26,7 @@ adding mars maven project to educational commute
 =================
 changing the site layout for participations and posts of different kinds
 adding sitemap to the site for indexing
+
+16.04.2019
+=============
+adding the publication page into the educa channels for documentation of the systems
