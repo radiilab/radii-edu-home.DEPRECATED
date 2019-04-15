@@ -1,7 +1,11 @@
+// import the class-es from scss 
 import '../scss/main.scss';
+// import the classes from css 
 import '../css/w3.css';
+import '../css/main.css'
 import '../css/w3-theme-black.css';
 import '../css/amber.css';
+
 import { RandomGenerator } from './random-generator';
 
 const outputParagraph = document.querySelector('#outputParagraph');

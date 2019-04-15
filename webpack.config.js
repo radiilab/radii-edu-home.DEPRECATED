@@ -17,6 +17,7 @@ var styleExtractor = new ExtractTextPlugin({
 var entry1 = [
     'CommingSoon',
     'about',
+    'publications',
     'workGroup-Sciences',
     'workGroup-Engineers',
     'projects',
