@@ -10,8 +10,13 @@
 
 <url>
   <loc>https://edu.radii.in/</loc>
-  <lastmod>2019-03-30T15:51:35+00:00</lastmod>
+  <lastmod>2019-04-15T17:40:25+00:00</lastmod>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/publications.html</loc>
+  <lastmod>2019-04-15T17:40:25+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://edu.radii.in/CommingSoon.html</loc>
@@ -50,13 +55,18 @@
 </url>
 <url>
   <loc>https://edu.radii.in/brochure22.html</loc>
-  <lastmod>2019-03-30T15:51:40+00:00</lastmod>
+  <lastmod>2019-04-15T17:40:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://edu.radii.in/space-marsMaven.html</loc>
-  <lastmod>2019-03-30T15:51:35+00:00</lastmod>
+  <lastmod>2019-04-15T17:40:25+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://edu.radii.in/index.html</loc>
+  <lastmod>2019-04-15T17:40:25+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
