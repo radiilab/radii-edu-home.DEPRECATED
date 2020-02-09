@@ -30,3 +30,8 @@ adding sitemap to the site for indexing
 16.04.2019
 =============
 adding the publication page into the educa channels for documentation of the systems
+
+10.02.2020
+=============
+
+adding crm facilities to the sitebase
