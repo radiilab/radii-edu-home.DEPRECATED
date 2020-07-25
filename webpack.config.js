@@ -20,7 +20,6 @@ var entry1 = [
     'publications',
     'workGroup-Sciences',
     'workGroup-Engineers',
-    'projects',
     'space-marsMaven',
     'brochure11',
     'brochure12',
