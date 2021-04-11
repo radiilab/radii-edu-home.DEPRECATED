@@ -25,3 +25,7 @@ image optimizer support {{ image webpack loader }}
 {{ yarn build} this starts webpack hot and heavy}
 #command for adding 
 {{ yarn build:prod} this starts the build and generates the dist folder}
+
+## radii-educational
+
+-   pages to be conected to the bloging system for better transparency of the categorical partition of connected events at radii

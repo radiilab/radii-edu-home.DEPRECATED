@@ -1,19 +1,14 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 // We need Nodes fs module to read directory contents
 const fs = require('fs')
 
-var sassExtractor= new ExtractTextPlugin({
-   filename: 'main.css'
-});
-var styleExtractor = new ExtractTextPlugin({
-    filename: 'styles.css'
-})
-//product charts of the education line 
+//product charts of the education line  
 var entry1 = [
     'CommingSoon',
     'about',
@@ -48,6 +43,8 @@ module.exports = {
         filename: 'bundle.js',
         // publicPath: '/dist'     module loadding exceptions
     },
+    mode: 'production',
+    devtool: 'eval-cheap-source-map',
     module: {
         rules: [
             {
@@ -57,27 +54,30 @@ module.exports = {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: [      "@babel/react" , 
+                                            "@babel/env"
+                            ]
                         }
                     }
                 ]
             },
             {
-                test: /\.scss$/,
-                use: sassExtractor.extract({
-                    use: ['css-loader', 'sass-loader']
-                })
+                test: /\.(scss|css)$/,
+                use: [
+                  MiniCssExtractPlugin.loader,
+                  {
+                    loader: "css-loader",
+                    options: {
+                      modules: false,
+                      sourceMap: true,
+                      importLoaders: 2
+                    },
+                  },
+                  "sass-loader"
+                ]
             },
             {
-                test: /\.css$/,
-                use: styleExtractor.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader' 
-                })
-                
-            },
-            {
-                test: /\.(png|jp(e*)g|svg)$/,
+                test: /\.(png|jp(e*)g|svg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -93,12 +93,18 @@ module.exports = {
         ]
     },
     plugins: [
-        sassExtractor,
-        styleExtractor,
-        new CopyWebpackPlugin([ 
-            { from: 'src/img', to: 'images',toType:"dir", force: true },
-            { from: 'src/sitemap.xml', to: 'sitemap.xml', toType:"file", force: true },
-        ]),
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: "style.css",
+            chunkFilename: "[name].css"
+        }),
+        new CopyWebpackPlugin( {
+            patterns: [ 
+                { from: 'src/img', to: 'images',toType:"dir", force: true },
+                { from: 'src/sitemap.xml', to: 'sitemap.xml', toType:"file", force: true },
+            ]
+        }),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             minify: {
@@ -107,6 +113,16 @@ module.exports = {
                 conservativeCollapse: true
               },
         }),
-        new CleanWebpackPlugin(['dist'])
+        new WorkboxPlugin.GenerateSW({
+        // these options encourage the ServiceWorkers to get in there fast 
+        // and not allow any straggling "old" SWs to hang around
+        clientsClaim: true,
+        skipWaiting: true,
+        }),
+        new CleanWebpackPlugin(
+            {
+                cleanAfterEveryBuildPatterns: ['dist']
+            }
+        )
     ].concat(entryHtmlPlugins)
 };
